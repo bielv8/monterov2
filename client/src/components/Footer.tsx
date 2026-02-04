@@ -1,4 +1,4 @@
-import logo from "@assets/image_1770228204877.png";
+import logo from "@assets/image_1770228718109.png";
 import { Facebook, Instagram, Linkedin, Twitter, MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "wouter";
 
@@ -18,7 +18,7 @@ export function Footer() {
               <span className="font-display text-xl font-bold text-white">Monteiro</span>
             </div>
             <p className="text-slate-400 leading-relaxed text-sm">
-              Providing premium insurance solutions tailored to your unique lifestyle and business needs. Trust, integrity, and excellence.
+              Oferecemos soluções premium em seguros personalizadas para seu estilo de vida e necessidades de negócios. Confiança, integridade e excelência.
             </p>
             <div className="flex gap-4">
               {[Facebook, Instagram, Twitter, Linkedin].map((Icon, i) => (
@@ -35,33 +35,33 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-display text-lg font-semibold text-white mb-6">Company</h4>
+            <h4 className="font-display text-lg font-semibold text-white mb-6">Empresa</h4>
             <ul className="space-y-4 text-sm text-slate-400">
-              <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
-              <li><Link href="/#services" className="hover:text-primary transition-colors">Our Services</Link></li>
-              <li><Link href="/blog" className="hover:text-primary transition-colors">Latest News</Link></li>
-              <li><Link href="/contact" className="hover:text-primary transition-colors">Contact Support</Link></li>
+              <li><Link href="/about" className="hover:text-primary transition-colors">Sobre Nós</Link></li>
+              <li><Link href="/#services" className="hover:text-primary transition-colors">Nossos Serviços</Link></li>
+              <li><Link href="/blog" className="hover:text-primary transition-colors">Notícias</Link></li>
+              <li><Link href="/contact" className="hover:text-primary transition-colors">Contato</Link></li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="font-display text-lg font-semibold text-white mb-6">Insurance</h4>
+            <h4 className="font-display text-lg font-semibold text-white mb-6">Seguros</h4>
             <ul className="space-y-4 text-sm text-slate-400">
-              <li className="hover:text-primary transition-colors cursor-pointer">Auto Insurance</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Home Insurance</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Life Insurance</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Business Solutions</li>
+              <li className="hover:text-primary transition-colors cursor-pointer">Seguro Auto</li>
+              <li className="hover:text-primary transition-colors cursor-pointer">Seguro Residencial</li>
+              <li className="hover:text-primary transition-colors cursor-pointer">Seguro de Vida</li>
+              <li className="hover:text-primary transition-colors cursor-pointer">Soluções Corporativas</li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-display text-lg font-semibold text-white mb-6">Contact Us</h4>
+            <h4 className="font-display text-lg font-semibold text-white mb-6">Fale Conosco</h4>
             <ul className="space-y-4 text-sm text-slate-400">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0" />
-                <span>123 Business Ave, Suite 100<br/>São Paulo, SP, Brazil</span>
+                <span>Rua do Comércio, 123<br/>São Paulo, SP</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
@@ -69,17 +69,17 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span>contact@monteiro.com</span>
+                <span>contato@monteiro.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} Monteiro Corretora. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Monteiro Corretora. Todos os direitos reservados.</p>
           <div className="flex gap-6">
-            <span className="cursor-pointer hover:text-white transition-colors">Privacy Policy</span>
-            <span className="cursor-pointer hover:text-white transition-colors">Terms of Service</span>
+            <span className="cursor-pointer hover:text-white transition-colors">Política de Privacidade</span>
+            <span className="cursor-pointer hover:text-white transition-colors">Termos de Serviço</span>
           </div>
         </div>
       </div>
