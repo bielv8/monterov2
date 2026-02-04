@@ -1,7 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@assets/image_1770228204877.png";
+import logo from "@assets/image_1770228718109.png";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -18,11 +18,11 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "/#services" },
-    { name: "About", href: "/about" },
+    { name: "Início", href: "/" },
+    { name: "Serviços", href: "/#services" },
+    { name: "Sobre", href: "/about" },
     { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
+    { name: "Contato", href: "/contact" },
   ];
 
   const handleLinkClick = () => setIsOpen(false);
@@ -75,7 +75,7 @@ export function Navbar() {
                 ? "bg-primary text-white hover:bg-primary/90"
                 : "bg-white text-primary hover:bg-white/90"
             )}>
-              Get a Quote
+              Solicitar Cotação
             </button>
           </Link>
         </nav>

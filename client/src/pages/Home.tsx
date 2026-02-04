@@ -43,31 +43,30 @@ export default function Home() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium mb-6">
               <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-              <span>#1 Rated Insurance Brokerage in São Paulo</span>
+              <span>Corretora de Seguros #1 em São Paulo</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-display font-bold text-white leading-[1.1] mb-6">
-              Protecting Your Future, <br/>
+              Protegendo seu Futuro, <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white">
-                Securing Your Legacy
+                Garantindo seu Legado
               </span>
             </h1>
             
             <p className="text-lg md:text-xl text-slate-200 mb-10 max-w-xl leading-relaxed">
-              Experience the peace of mind that comes with comprehensive coverage. 
-              We blend traditional expertise with modern efficiency.
+              Experimente a tranquilidade de uma cobertura completa. Combinamos expertise tradicional com eficiência moderna.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact">
                 <button className="px-8 py-4 rounded-full bg-primary text-white font-semibold text-lg hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-1 flex items-center justify-center gap-2">
-                  Get a Free Quote
+                  Cotação Gratuita
                   <ArrowRight className="w-5 h-5" />
                 </button>
               </Link>
               <Link href="/about">
                 <button className="px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20 font-semibold text-lg hover:bg-white/20 transition-all hover:-translate-y-1">
-                  Learn More
+                  Saiba Mais
                 </button>
               </Link>
             </div>
@@ -79,12 +78,12 @@ export default function Home() {
       <section id="services" className="py-24 bg-white relative">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-primary font-semibold tracking-wider text-sm uppercase">Our Expertise</span>
+            <span className="text-primary font-semibold tracking-wider text-sm uppercase">Nossa Expertise</span>
             <h2 className="text-3xl md:text-4xl font-display font-bold mt-3 mb-4 text-slate-900">
-              Comprehensive Insurance Solutions
+              Soluções Completas em Seguros
             </h2>
             <p className="text-slate-500 text-lg">
-              Tailored coverage plans designed to fit your specific needs, from personal protection to business assets.
+              Planos de cobertura personalizados projetados para atender às suas necessidades específicas.
             </p>
           </div>
 
@@ -103,7 +102,7 @@ export default function Home() {
             {/* Fallback if no services loaded yet */}
             {!loadingServices && (!services || services.length === 0) && (
               <div className="col-span-full text-center text-slate-500 py-12">
-                Our services are being updated. Please check back soon.
+                Nossos serviços estão sendo atualizados. Por favor, volte em breve.
               </div>
             )}
           </div>
@@ -125,7 +124,7 @@ export default function Home() {
               {/* Meeting / Handshake image */}
               <img 
                 src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1600"
-                alt="Business Meeting" 
+                alt="Reunião de Negócios" 
                 className="relative rounded-2xl shadow-2xl z-10"
               />
               <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-xl z-20 hidden md:block">
@@ -134,7 +133,7 @@ export default function Home() {
                     <CheckCircle2 className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-sm text-slate-500">Client Satisfaction</p>
+                    <p className="text-sm text-slate-500">Satisfação do Cliente</p>
                     <p className="text-2xl font-bold text-slate-900">98%</p>
                   </div>
                 </div>
@@ -142,20 +141,20 @@ export default function Home() {
             </motion.div>
             
             <div>
-              <span className="text-primary font-semibold tracking-wider text-sm uppercase">Why Choose Us</span>
+              <span className="text-primary font-semibold tracking-wider text-sm uppercase">Por que nos escolher</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold mt-3 mb-6 text-slate-900">
-                A Partner You Can Trust With Your Future
+                Um parceiro em quem você pode confiar seu futuro
               </h2>
               <p className="text-slate-500 text-lg mb-8 leading-relaxed">
-                We don't just sell policies; we build relationships. Our dedicated team of experts works tirelessly to ensure you have the right coverage at the best possible rates.
+                Não apenas vendemos apólices; construímos relacionamentos. Nossa equipe dedicada trabalha incansavelmente para garantir a melhor cobertura.
               </p>
               
               <ul className="space-y-4 mb-8">
                 {[
-                  "Personalized risk assessment and consultation",
-                  "24/7 claims support and assistance",
-                  "Access to premium carriers and exclusive rates",
-                  "Dedicated account manager for every client"
+                  "Avaliação de risco personalizada",
+                  "Suporte 24/7 para sinistros",
+                  "Acesso às melhores seguradoras",
+                  "Atendimento exclusivo para cada cliente"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <div className="bg-primary/10 p-1 rounded-full text-primary">
@@ -168,7 +167,7 @@ export default function Home() {
               
               <Link href="/about">
                 <button className="text-primary font-semibold hover:text-primary/80 transition-colors flex items-center gap-2 group">
-                  More about our history
+                  Mais sobre nossa história
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </Link>
@@ -182,14 +181,14 @@ export default function Home() {
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex justify-between items-end mb-12">
             <div>
-              <span className="text-primary font-semibold tracking-wider text-sm uppercase">Latest Insights</span>
+              <span className="text-primary font-semibold tracking-wider text-sm uppercase">Últimas Notícias</span>
               <h2 className="text-3xl md:text-4xl font-display font-bold mt-3 text-slate-900">
-                News & Updates
+                Blog e Novidades
               </h2>
             </div>
             <Link href="/blog">
               <button className="hidden md:flex items-center gap-2 px-6 py-3 rounded-full border border-slate-200 hover:border-primary hover:text-primary transition-all">
-                View All Posts
+                Ver Todas as Postagens
               </button>
             </Link>
           </div>
@@ -216,9 +215,9 @@ export default function Home() {
                       />
                     </div>
                     <div className="flex gap-2 text-sm text-slate-500 mb-3">
-                      <span>{post.publishedAt ? format(new Date(post.publishedAt), 'MMM dd, yyyy') : 'Draft'}</span>
+                      <span>{post.publishedAt ? format(new Date(post.publishedAt), 'dd/MM/yyyy') : 'Rascunho'}</span>
                       <span>•</span>
-                      <span>5 min read</span>
+                      <span>5 min de leitura</span>
                     </div>
                     <h3 className="text-xl font-bold font-display text-slate-900 mb-2 group-hover:text-primary transition-colors">
                       {post.title}
@@ -235,7 +234,7 @@ export default function Home() {
           <div className="mt-8 text-center md:hidden">
             <Link href="/blog">
               <button className="px-6 py-3 rounded-full border border-slate-200 hover:border-primary hover:text-primary transition-all">
-                View All Posts
+                Ver Todas as Postagens
               </button>
             </Link>
           </div>
@@ -247,14 +246,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
         <div className="container px-4 md:px-6 mx-auto relative z-10 text-center">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
-            Ready to secure your future?
+            Pronto para garantir seu futuro?
           </h2>
           <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-10">
-            Let's discuss how we can tailor a plan that fits your life perfectly. No hidden fees, just honest protection.
+            Vamos conversar sobre como podemos personalizar um plano que se adapte perfeitamente à sua vida.
           </p>
           <Link href="/contact">
             <button className="px-10 py-5 bg-white text-slate-900 rounded-full font-bold text-lg hover:bg-primary hover:text-white transition-all duration-300 shadow-xl shadow-white/10 hover:shadow-primary/50 hover:-translate-y-1">
-              Contact Us Today
+              Fale Conosco Hoje
             </button>
           </Link>
         </div>

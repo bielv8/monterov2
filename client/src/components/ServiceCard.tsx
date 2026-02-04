@@ -35,7 +35,7 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
       </p>
       
       <div className="flex items-center gap-2 text-sm font-semibold text-primary opacity-0 group-hover:opacity-100 transform translate-x-[-10px] group-hover:translate-x-0 transition-all duration-300">
-        <span>Learn more</span>
+        <span>Saiba mais</span>
         <ArrowRight className="w-4 h-4" />
       </div>
     </motion.div>

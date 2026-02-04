@@ -17,10 +17,10 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-display font-bold mb-6"
           >
-            About Monteiro
+            Sobre a Monteiro
           </motion.h1>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-            Decades of trust, excellence, and commitment to our clients.
+            Décadas de confiança, excelência e compromisso com nossos clientes.
           </p>
         </div>
       </div>
@@ -32,29 +32,29 @@ export default function About() {
              whileInView={{ opacity: 1, x: 0 }}
              viewport={{ once: true }}
           >
-            <span className="text-primary font-semibold uppercase tracking-wider text-sm">Our Story</span>
+            <span className="text-primary font-semibold uppercase tracking-wider text-sm">Nossa História</span>
             <h2 className="text-3xl md:text-4xl font-display font-bold mt-2 mb-6 text-slate-900">
-              Building Trust Since 1995
+              Construindo Confiança Desde 1995
             </h2>
             <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
               <p>
-                Founded by Carlos Monteiro, Monteiro Corretora began with a simple mission: to make insurance understandable, accessible, and truly protective for families and businesses in São Paulo.
+                Fundada por Carlos Monteiro, a Monteiro Corretora começou com uma missão simples: tornar o seguro compreensível, acessível e verdadeiramente protetor para famílias e empresas em São Paulo.
               </p>
               <p>
-                Over the past three decades, we've grown from a small family office to one of the region's most respected brokerage firms. Our growth hasn't changed our core values—we still treat every client like family.
+                Nas últimas três décadas, crescemos de um pequeno escritório familiar para uma das corretoras mais respeitadas da região. Nosso crescimento não mudou nossos valores fundamentais — ainda tratamos cada cliente como parte da família.
               </p>
               <p>
-                We believe that insurance isn't just a contract; it's a promise. A promise that when life takes an unexpected turn, you won't be alone. We are here to keep that promise.
+                Acreditamos que o seguro não é apenas um contrato; é uma promessa. Uma promessa de que, quando a vida der uma reviravolta inesperada, você não estará sozinho. Estamos aqui para cumprir essa promessa.
               </p>
             </div>
           </motion.div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
-              { icon: Users, title: "Client First", desc: "Your needs dictate our solutions, always." },
-              { icon: Award, title: "Excellence", desc: "Award-winning service and support." },
-              { icon: History, title: "Experience", desc: "30+ years of navigating the market." },
-              { icon: Target, title: "Precision", desc: "Tailored policies, no fluff." }
+              { icon: Users, title: "Cliente em Primeiro Lugar", desc: "Suas necessidades ditam nossas soluções, sempre." },
+              { icon: Award, title: "Excelência", desc: "Serviço e suporte premiados." },
+              { icon: History, title: "Experiência", desc: "Mais de 30 anos navegando no mercado." },
+              { icon: Target, title: "Precisão", desc: "Apólices personalizadas, sem enrolação." }
             ].map((item, i) => (
               <motion.div 
                 key={i}
@@ -78,20 +78,24 @@ export default function About() {
       {/* Team Section Placeholder */}
       <div className="bg-white py-20">
         <div className="container px-4 mx-auto text-center">
-          <h2 className="text-3xl font-display font-bold mb-12 text-slate-900">Leadership Team</h2>
+          <h2 className="text-3xl font-display font-bold mb-12 text-slate-900">Liderança</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((_, i) => (
+            {[
+              { name: "Carlos Monteiro", role: "Fundador e CEO" },
+              { name: "Ana Silva", role: "Diretora de Operações" },
+              { name: "Pedro Santos", role: "Especialista em Riscos" }
+            ].map((member, i) => (
               <div key={i} className="group">
                 <div className="aspect-[3/4] rounded-2xl bg-slate-100 overflow-hidden mb-4 relative">
                    {/* Abstract team placeholder */}
                    <img 
                      src={`https://images.unsplash.com/photo-${i === 0 ? '1560250097-0b9358e10e2e' : i === 1 ? '1573496359142-b8d87734a5a2' : '1580489944761-15a19d654956'}?auto=format&fit=crop&q=80&w=800`}
                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                     alt="Team member"
+                     alt={member.name}
                    />
                 </div>
-                <h3 className="font-bold text-xl text-slate-900">Name Surname</h3>
-                <p className="text-primary font-medium">Position Title</p>
+                <h3 className="font-bold text-xl text-slate-900">{member.name}</h3>
+                <p className="text-primary font-medium">{member.role}</p>
               </div>
             ))}
           </div>

@@ -26,14 +26,14 @@ export default function Contact() {
     mutation.mutate(data, {
       onSuccess: () => {
         toast({
-          title: "Message Sent",
-          description: "Thank you for contacting us. We will get back to you shortly.",
+          title: "Mensagem Enviada",
+          description: "Obrigado por entrar em contato. Responderemos em breve.",
         });
         form.reset();
       },
       onError: (error) => {
         toast({
-          title: "Error",
+          title: "Erro",
           description: error.message,
           variant: "destructive",
         });
@@ -52,10 +52,10 @@ export default function Contact() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-display font-bold mb-4"
           >
-            Get in Touch
+            Fale Conosco
           </motion.h1>
           <p className="text-xl text-slate-300 max-w-xl mx-auto">
-            Have questions about our insurance plans? We're here to help.
+            Tem dúvidas sobre nossos planos? Estamos aqui para ajudar.
           </p>
         </div>
       </div>
@@ -65,7 +65,7 @@ export default function Contact() {
           
           {/* Contact Info Sidebar */}
           <div className="md:col-span-2 bg-slate-50 p-10 border-r border-slate-100">
-            <h3 className="text-xl font-bold font-display text-slate-900 mb-8">Contact Information</h3>
+            <h3 className="text-xl font-bold font-display text-slate-900 mb-8">Informações de Contato</h3>
             
             <div className="space-y-8">
               <div className="flex items-start gap-4">
@@ -73,10 +73,10 @@ export default function Contact() {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-900">Office</h4>
+                  <h4 className="font-semibold text-slate-900">Escritório</h4>
                   <p className="text-slate-500 text-sm mt-1">
-                    123 Business Ave, Suite 100<br />
-                    São Paulo, SP, Brazil
+                    Rua do Comércio, 123<br />
+                    São Paulo, SP
                   </p>
                 </div>
               </div>
@@ -86,9 +86,9 @@ export default function Contact() {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-900">Phone</h4>
+                  <h4 className="font-semibold text-slate-900">Telefone</h4>
                   <p className="text-slate-500 text-sm mt-1">+55 (11) 9999-9999</p>
-                  <p className="text-slate-400 text-xs mt-1">Mon-Fri from 9am to 6pm</p>
+                  <p className="text-slate-400 text-xs mt-1">Seg-Sex das 09h às 18h</p>
                 </div>
               </div>
 
@@ -97,8 +97,8 @@ export default function Contact() {
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-900">Email</h4>
-                  <p className="text-slate-500 text-sm mt-1">contact@monteiro.com</p>
+                  <h4 className="font-semibold text-slate-900">E-mail</h4>
+                  <p className="text-slate-500 text-sm mt-1">contato@monteiro.com</p>
                 </div>
               </div>
             </div>
@@ -106,17 +106,17 @@ export default function Contact() {
 
           {/* Form Area */}
           <div className="md:col-span-3 p-10">
-            <h3 className="text-xl font-bold font-display text-slate-900 mb-6">Send us a Message</h3>
+            <h3 className="text-xl font-bold font-display text-slate-900 mb-6">Envie-nos uma Mensagem</h3>
             
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium text-slate-700">Full Name</label>
+                  <label htmlFor="name" className="text-sm font-medium text-slate-700">Nome Completo</label>
                   <input 
                     {...form.register("name")}
                     id="name"
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all"
-                    placeholder="John Doe"
+                    placeholder="Seu nome"
                   />
                   {form.formState.errors.name && (
                     <p className="text-red-500 text-xs">{form.formState.errors.name.message}</p>
@@ -124,7 +124,7 @@ export default function Contact() {
                 </div>
                 
                 <div className="space-y-2">
-                  <label htmlFor="phone" className="text-sm font-medium text-slate-700">Phone (Optional)</label>
+                  <label htmlFor="phone" className="text-sm font-medium text-slate-700">Telefone (Opcional)</label>
                   <input 
                     {...form.register("phone")}
                     id="phone"
@@ -135,13 +135,13 @@ export default function Contact() {
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="email" className="text-sm font-medium text-slate-700">Email Address</label>
+                <label htmlFor="email" className="text-sm font-medium text-slate-700">Endereço de E-mail</label>
                 <input 
                   {...form.register("email")}
                   id="email"
                   type="email"
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all"
-                  placeholder="john@example.com"
+                  placeholder="seu@email.com"
                 />
                 {form.formState.errors.email && (
                   <p className="text-red-500 text-xs">{form.formState.errors.email.message}</p>
@@ -149,13 +149,13 @@ export default function Contact() {
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium text-slate-700">Message</label>
+                <label htmlFor="message" className="text-sm font-medium text-slate-700">Mensagem</label>
                 <textarea 
                   {...form.register("message")}
                   id="message"
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all resize-none"
-                  placeholder="How can we help you?"
+                  placeholder="Como podemos ajudar?"
                 />
                 {form.formState.errors.message && (
                   <p className="text-red-500 text-xs">{form.formState.errors.message.message}</p>
@@ -170,11 +170,11 @@ export default function Contact() {
                 {mutation.isPending ? (
                   <>
                     <Loader2 className="w-5 h-5 animate-spin" />
-                    Sending...
+                    Enviando...
                   </>
                 ) : (
                   <>
-                    Send Message
+                    Enviar Mensagem
                     <Send className="w-5 h-5" />
                   </>
                 )}

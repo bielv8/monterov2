@@ -15,10 +15,10 @@ export default function Blog() {
       <div className="pt-32 pb-12 bg-white border-b border-slate-100">
         <div className="container px-4 mx-auto">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-4">
-            Our Blog
+            Nosso Blog
           </h1>
           <p className="text-xl text-slate-500 max-w-2xl">
-            Latest news, insurance tips, and updates from the Monteiro team.
+            Últimas notícias, dicas de seguros e atualizações da equipe Monteiro.
           </p>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function Blog() {
                   </div>
                   <div className="p-6 flex-1 flex flex-col">
                     <div className="text-xs font-bold text-primary mb-2 uppercase tracking-wide">
-                      Article
+                      Artigo
                     </div>
                     <h2 className="text-xl font-display font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors">
                       {post.title}
@@ -58,8 +58,8 @@ export default function Blog() {
                       {post.summary}
                     </p>
                     <div className="flex items-center justify-between pt-4 border-t border-slate-100 text-xs text-slate-400">
-                      <span>{post.publishedAt ? format(new Date(post.publishedAt), 'MMMM dd, yyyy') : 'Draft'}</span>
-                      <span>5 min read</span>
+                      <span>{post.publishedAt ? format(new Date(post.publishedAt), 'dd/MM/yyyy') : 'Rascunho'}</span>
+                      <span>5 min de leitura</span>
                     </div>
                   </div>
                 </motion.article>
