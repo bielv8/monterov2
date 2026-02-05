@@ -44,7 +44,10 @@ export function Navbar() {
             <img 
               src={logo} 
               alt="Monteiro Corretora" 
-              className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+              className={cn(
+                "h-12 w-auto object-contain transition-all duration-300 group-hover:scale-105",
+                scrolled || location !== "/" ? "brightness-0" : ""
+              )}
             />
           </div>
           <div className={cn(
